@@ -56,7 +56,7 @@ Please note that we used detectron 0.1.0 in this project. Higher versions of det
 
  * We evaluate our model on the four splits in DIOR and two splits in VHR-10.v2. The evaluate script is
    ```Python
-   sh script/dist_test_voc.sh
+   sh script/dist_test.sh
 
  ## 📚 Model Zoo
 * We provided both the base-trained models and novel-finetuning models for the both two benchmarks. The model links are [Baidu Drive]().
