@@ -24,7 +24,7 @@ This repository contains the source code for our paper " *Global-integrated and 
 
 ## 🧩 Installation
 
-Our code is based on [MMFewShot](https://github.com/open-mmlab/mmfewshot/tree/main) and please refer to [install.md](https://github.com/open-mmlab/mmfewshot/blob/main/docs/en/install.md) for installation of MMFewShot framwork. 
+Our code is based on [MMFewShot](https://github.com/open-mmlab/mmfewshot/tree/main) and please refer to [Install.md](https://github.com/open-mmlab/mmfewshot/blob/main/docs/en/install.md) for installation of MMFewShot framwork. 
 Please note that we used detectron 0.1.0 in this project. Higher versions of detectron might report errors.
 
 
@@ -40,8 +40,8 @@ Please note that we used detectron 0.1.0 in this project. Higher versions of det
 ## 💾 Data Preparation
 
 * Our model is evaluated on two FSOD benchmarks DIOR and NWPU-VHR following the previous work [Attention-RPN](https://github.com/fanq15/FewX).
-* Please prepare the original [DIOR](https://pan.baidu.com/s/1iLKT0JQoKXEJTGNxt5lSMg#list/path=%2F) and NWPU [VHR-10.v2](https://pan.baidu.com/s/1hqwzXeG?_at_=1728709381194#list/path=%2F) datasets and also the few-shot datasets in the folder ./data/dior and ./data/nwpu_vhr respectively.
-* please refer to [Data Preparation](https://github.com/Ybowei/UNP/blob/main/data/preparation/README.md) for more detail.
+* Please prepare the original [DIOR](https://pan.baidu.com/s/1iLKT0JQoKXEJTGNxt5lSMg#list/path=%2F) and [NWPU VHR-10.v2](https://pan.baidu.com/s/1hqwzXeG?_at_=1728709381194#list/path=%2F) datasets and also the few-shot datasets in the folder ./data/dior and ./data/nwpu_vhr respectively.
+* please refer to [Data Preparation](https://github.com/Ybowei/UNP/blob/main/data/preparation/README.md) for more detail in the few-shot setting.
 
 ## 📖 Model training and evaluation on the both DIOR and NWPU VHR-10.v2
 
