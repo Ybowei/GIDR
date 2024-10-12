@@ -4,7 +4,7 @@ This repository contains the source code for our paper " *Global-integrated and 
 **abstract:** *Few-Shot Object Detection (FSOD) in remote sensing images is a marginally explored but highly challenging task that focuses on identifying unseen classes of objects with a limited number of annotations. Current FSOD approaches often fail to accurately localize the foreground and misalign targets with various orientations, resulting in poor detection performance. For this purpose, we develop a fresh and powerful meta-learning framework based on the idea of imprinting, which leverages tailored support information to model the region correlation between the query and support objects in the different stage. Specifically, a global-integrated scheme is first proposed to guide the generation of high-quality proposals through increasing the activation of foreground features and integrating support global information. Considering the orientation discrepancy of objects in query and support sets, we further introduce a drift-rectified technique to achieve adaptive alignment by implicitly capturing the positional correspondence between the two sets. In stark contrast to conventional FSOD approaches, our method can effectively extract key clues and establish directional relationships between objects from different training sets, leading to better generalization capability. Extensive experiments on two standard benchmarks (DIOR and NWPU VHR-10.V2) manifest the effectiveness, and our proposed method exhibits superior performance to other competitors with similar motivation.*
 
 ---
-![Image text](https://github.com/Ybowei/GIDR/blob/main/picture/method.jpg)
+![Image text](https://github.com/Ybowei/GIDR/main/picture/method.jpg)
 ---
 
 
