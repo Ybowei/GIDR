@@ -41,25 +41,25 @@ Please note that we used detectron 0.1.0 in this project. Higher versions of det
 
 * Our model is evaluated on two FSOD benchmarks DIOR and NWPU-VHR following the previous work [Attention-RPN](https://github.com/fanq15/FewX).
 * Please prepare the original [DIOR](https://pan.baidu.com/s/1iLKT0JQoKXEJTGNxt5lSMg#list/path=%2F) and NWPU [VHR-10.v2](https://pan.baidu.com/s/1hqwzXeG?_at_=1728709381194#list/path=%2F) datasets and also the few-shot datasets in the folder ./data/dior and ./data/nwpu_vhr respectively.
-* please refer to [PASCAL VOC](https://github.com/Ybowei/UNP/blob/main/data/voc/README.md) and [MSCOCO](https://github.com/Ybowei/UNP/blob/main/data/coco/README.md) for more detail.
+* please refer to [Data Preparation](https://github.com/Ybowei/UNP/blob/main/data/preparation/README.md) for more detail.
 
 ## 📖 Model training and evaluation on the both DIOR and NWPU VHR-10.v2
 
-* We have two steps for model training, first training the model over base classes, and then fine-tuning the model over novel classes.
+* We have two steps for model training, first meta-base-training the model over base classes, and then meta-fine-tuning the model over novel classes.
 * The training script for base training is
   ```Python
-  sh script/dist_train_voc_base.sh
+  sh script/dist_train_base.sh
 
  * After model base training, we perform 3/5/10/20-shot fine-tuning over novel classes, and the training script is
    ```Python
-   sh script/dist_train_voc_finetuning.sh
+   sh script/dist_train_finetuning.sh
 
- * We evaluate our model on the three splits in PASCLAL VOC as [TFA](https://github.com/ucbdrive/few-shot-object-detection). The evaluate script is
+ * We evaluate our model on the four splits in DIOR and two splits in VHR-10.v2. The evaluate script is
    ```Python
    sh script/dist_test_voc.sh
 
  ## 📚 Model Zoo
-* We provided both the base-trained models over base classes and novel-finetuning models over novel classes for both two benchmarks. The model links are [Baidu Drive]().
+* We provided both the base-trained models and novel-finetuning models for the both two benchmarks. The model links are [Baidu Drive]().
 
  ## 👏 Acknowledgement
-* This repo is developed based on [TFA](https://github.com/ucbdrive/few-shot-object-detection) and [mmfewshot](https://github.com/open-mmlab/mmfewshot/tree/main). Thanks for their wonderful codebases.
+* This repo is developed based on [Attention-RPN](https://github.com/fanq15/FewX), [TFA](https://github.com/ucbdrive/few-shot-object-detection), and [mmfewshot](https://github.com/open-mmlab/mmfewshot/tree/main). Thanks for their wonderful codebases.
