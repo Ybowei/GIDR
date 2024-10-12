@@ -40,7 +40,7 @@ Please note that we used detectron 0.1.0 in this project. Higher versions of det
 ## 💾 Data Preparation
 
 * Our model is evaluated on two FSOD benchmarks DIOR and NWPU-VHR following the previous work [Attention-RPN](https://github.com/fanq15/FewX).
-* Please prepare the original PASCAL VOC and MSCOCO datasets and also the few-shot datasets in the folder ./data/coco and ./data/voc respectively.
+* Please prepare the original [DIOR](https://pan.baidu.com/s/1iLKT0JQoKXEJTGNxt5lSMg#list/path=%2F) and NWPU [VHR-10.v2](https://pan.baidu.com/s/1hqwzXeG?_at_=1728709381194#list/path=%2F) datasets and also the few-shot datasets in the folder ./data/dior and ./data/nwpu_vhr respectively.
 * please refer to [PASCAL VOC](https://github.com/Ybowei/UNP/blob/main/data/voc/README.md) and [MSCOCO](https://github.com/Ybowei/UNP/blob/main/data/coco/README.md) for more detail.
 
 ## 📖 Model training and evaluation on the both DIOR and NWPU VHR-10.v2
